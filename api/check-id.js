@@ -5,7 +5,7 @@ export default function handler(req, res) {
 
   const { docNumber } = req.body;
 
-  if (!cedula || typeof cedula !== 'string') {
+  if (!docNumber || typeof docNumber !== 'string') {
     return res.status(400).json({ error: 'Número de documento inválido o ausente.' });
   }
 
